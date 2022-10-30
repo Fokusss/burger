@@ -8,23 +8,30 @@
 .content {
   max-width: 1280px;
   display: flex;
-  justify-content: space-around;
-}
-
-.link_box {
-  min-width: 178px;
-  display: flex;
   align-items: center;
-  margin-right: 29px;
-  padding: 10px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.nav_bar {
-  min-width: 356px;
+.link {
   display: flex;
-  align-items: center;
+  text-decoration: none;
+  color: #8585AD;
+  padding: 16px 20px 16px 20px;
 }
 
-.icon {
-  margin: 0 9px 0 0;
+.linkActive {
+  composes: link;
+  color: #F2F2F3;
 }
+
+.nav {
+  width: 39%;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-left: 9px;
+}
+

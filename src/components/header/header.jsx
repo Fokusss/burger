@@ -1,31 +1,18 @@
 import { Logo, BurgerIcon, ListIcon,ProfileIcon} from "@ya.praktikum/react-developer-burger-ui-components";
 import style from "./header.module.css";
 
-function Link (props) {
-  return (
-    <div className={style.link_box} style={props.style}>
-      <props.icon />
-      <p style={{marginLeft: 9}} className="text text_type_main-default">{props.text}</p>
-    </div>
-  )
-}
-
-
-function NavBar (props) {
-  return (
-    <div className={style.nav_bar}>
-      <Link text='Констурктор' icon={BurgerIcon}/>
-      <Link text='Лента заказов' icon={ListIcon}/>
-    </div>
-  )
-}
-
 function Content (props) {
+  const styleForNavText = "text text_type_main-default" + ' ' + style.text;
   return (
     <div className={style.content}>
-      <NavBar />
+      <div className={style.nav}>
+      <a href="#" className={style.linkActive}><BurgerIcon/><p className={styleForNavText}>Конструктор</p></a>
+      <a href="#" className={style.link}><ListIcon /><p className={styleForNavText}>Лента заказов</p></a>
+      </div>
       <Logo />
-      <Link text='Личный кабинет' icon={ProfileIcon} />
+      <div className={style.nav}>
+        <a href="#" className={style.link}><ProfileIcon /><p className={styleForNavText}>Личный кабинет</p></a>
+      </div>
     </div>
   )
 }
