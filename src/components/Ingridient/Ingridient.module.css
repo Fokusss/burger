@@ -1,0 +1,15 @@
+.box {
+  width: 272px;
+  height: 208px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.price {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 9px;
+}

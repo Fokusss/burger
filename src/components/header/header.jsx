@@ -18,12 +18,10 @@ function Content (props) {
 }
 
 
-function Header (props) {
+export default function Header (props) {
   return (
     <div className={style.box}>
       <Content />
     </div>
   )
 }
-
-export default Header;
