@@ -1,0 +1,21 @@
+.nav {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.link {
+  text-align: center;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #8585AD;
+  padding: 16px 0 16px 0;
+  border-bottom: 2px solid #2F2F37;
+}
+
+.link_active {
+  color: #F2F2F3;
+  border-bottom: 2px solid #4C4CFF;
+}
