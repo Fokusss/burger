@@ -1,0 +1,25 @@
+.box {
+  width: 600px;
+  height: 752px;
+}
+
+.boxIndgidient {
+  margin: 100px 0 0 0;
+  width: 580px;
+  height: 500px;
+  border: 1px solid green;
+  overflow-y: scroll;
+}
+
+.boxIndgidient::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+.boxIndgidient::-webkit-scrollbar-track {
+  background: #2F2F37;;        /* цвет дорожки */
+}
+.boxIndgidient::-webkit-scrollbar-thumb {
+  background-color: #8585AD;    /* цвет плашки */
+  border-radius: 0;       /* закругления плашки */
+  border: 3px solid #8585AD;  /* padding вокруг плашки */
+}
+
